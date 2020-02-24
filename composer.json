@@ -1,0 +1,29 @@
+{
+    "name": "drnkwati/closet-aspects",
+    "description": "Closet Aspects are a set of interfaces that define the services used to build apps.",
+    "license": "MIT",
+    "authors": [
+    {
+        "name": "Divine Nkwati",
+        "email": "drnkwati@gmail.com"
+    }],
+    "require":
+    {
+        "php": ">=5.3"
+    },
+    "autoload":
+    {
+        "psr-4":
+        {
+            "Closet\\Aspects\\": "src"
+        }
+    },
+    "extra":
+    {
+        "branch-alias":
+        {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "minimum-stability": "dev"
+}
