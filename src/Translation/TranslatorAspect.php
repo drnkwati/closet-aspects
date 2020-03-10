@@ -1,5 +1,4 @@
 <?php
-
 namespace Closet\Aspects\Translation;
 
 interface TranslatorAspect
@@ -15,20 +14,9 @@ interface TranslatorAspect
     public function trans($key, array $replace = array(), $locale = null);
 
     /**
-     * Translate only the keys for the given array.
-     *
-     * @param  array $values
-     * @param  array   $replace
-     * @param  string  $locale
-     * @param  boolean  $transKey
-     * @return mixed
-     */
-    // public function transArray(array $values, array $replace = array(), $locale = null, $transKey = true);
-
-    /**
      * Translate keys for the given array.
      *
-     * @param  array $values
+     * @param  array   $values
      * @param  array   $replace
      * @param  string  $locale
      * @return mixed
@@ -38,23 +26,10 @@ interface TranslatorAspect
     /**
      * Translate only the values for the given array.
      *
-     * @param  array $values
+     * @param  array   $values
      * @param  array   $replace
      * @param  string  $locale
      * @return mixed
      */
     public function transValues(array $values, array $replace = array(), $locale = null);
-
-    /**
-     * Translate keys for the given array.
-     *
-     * @param  mixed $values
-     * @param  string  $pattern
-     * @param  array   $replace
-     * @param  string  $locale
-     * @return mixed
-     */
-    // public function transMatch(
-    //     $values, array $replace = array(), $locale = null, $pattern = "|<[^>]+>(.*)</[^>]+>|U"
-    // );
 }

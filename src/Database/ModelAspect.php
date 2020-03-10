@@ -3,16 +3,6 @@ namespace Closet\Aspects\Database;
 
 interface ModelAspect
 {
-    const FIELD_UID = 'uid';
-    const FIELD_EMAIL = 'email';
-    const FIELD_PASSWORD = 'password';
-    const FIELD_LOCALE = 'language';
-
-    const INFO_TABLE = '_table_';
-    const INFO_TUPLE = '_tuple_';
-    const INFO_FIELD = '_field_';
-    const INFO_VALUE = '_value_';
-
     /**
      * Get the possible list of values for a field.
      *
@@ -32,14 +22,14 @@ interface ModelAspect
      *
      * @return array
      */
-    public function rulesFor($action = null);
+    public function rulesFor($action);
 
     /**
      * Get the attributes for creating form elements.
      *
      * @return array
      */
-    public function elementsFor($action = null);
+    public function elementsFor($action);
 
     /**
      * Set or Get the bound container.
@@ -47,5 +37,5 @@ interface ModelAspect
      * @param  \ArrayAccess       $arrayAccessContainer
      * @return \ArrayAccess|null
      */
-    public static function ioc($arrayAccessContainer = null);
+    // public static function ioc($arrayAccessContainer = null);
 }
