@@ -1,9 +1,8 @@
 <?php
-
 namespace Closet\Aspects\Foundation;
 
-use Closet\Aspects\Container\ContainerAspect;
 use Closet\Aspects\Events\EmitterAspect;
+use Closet\Aspects\Container\ContainerAspect;
 
 interface ApplicationAspect extends ContainerAspect, EmitterAspect
 {
@@ -59,7 +58,7 @@ interface ApplicationAspect extends ContainerAspect, EmitterAspect
      * @param  string  $locale
      * @return string|array
      */
-    public function trans($key);
+    public function translate($key);
 
     /**
      * Get the default locale being used.
